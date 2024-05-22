@@ -56,7 +56,7 @@ app.get("/jobs", async(req, res) => {
     } catch(error) {
         return res.status(500).json(error);
     }
-})//yeaman
+})
 app.listen(port, () => {
     console.log("server is running on port: " + port);
 });
