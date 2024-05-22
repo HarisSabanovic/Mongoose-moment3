@@ -25,7 +25,12 @@ const JobSchema = new mongoose.Schema({
         required: true
     },
 
-    duration: {
+    startDate: {
+        type: Date,
+        required: true
+    },
+
+    endDate: {
         type: Date,
         required: true
     },
@@ -41,6 +46,16 @@ const Job = mongoose.model("Job", JobSchema);
 
 app.get("/api", async (req, res) => {
     res.json({message: "welcome to this api"});
+})
+
+app.get("/jobs", async(req, res) => {
+    try {
+        let result = await Job.find({});
+
+        return res.json(result);
+    } catch(error) {
+        return res.status(500).json(error);
+    }
 })
 
 app.listen(port, () => {
