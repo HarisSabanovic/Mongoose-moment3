@@ -6,6 +6,7 @@ const app = express();
 const port = 4000;
 
 app.use(express.json());
+app.use(express.static('public'));
 
 
 mongoose.connect("mongodb://127.0.0.1:27017/workdb").then(() => {
@@ -48,6 +49,12 @@ app.get("/api", async (req, res) => {
     res.json({message: "welcome to this api"});
 })
 
+app.get("/", (req, res) => {
+    res.render("index")
+
+    console.log()
+})
+
 app.get("/jobs", async(req, res) => {
     try {
         let result = await Job.find({});
@@ -57,6 +64,18 @@ app.get("/jobs", async(req, res) => {
         return res.status(500).json(error);
     }
 })
+
+app.post("/jobs", async(req, res) => {
+    try{
+        let result = await Job.create(req.body);
+
+        return res.json(result);
+    } catch(error) {
+        return res.status(400).json(error);
+    }
+})
+
+
 app.listen(port, () => {
     console.log("server is running on port: " + port);
 });
