@@ -1,5 +1,5 @@
 
-        // JavaScript för att hämta data från servern och visa den på sidan
+// JavaScript för att hämta data från servern och visa den på sidan
 fetch('/jobs')
     .then(response => response.json())
     .then(jobs => {
@@ -17,4 +17,4 @@ fetch('/jobs')
              `;
             jobListDiv.appendChild(jobDiv);
         });
- });
+ });    
