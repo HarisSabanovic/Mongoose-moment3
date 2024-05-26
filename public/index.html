@@ -6,20 +6,21 @@
     <title>CV</title>
     <link rel="stylesheet" href="css/main.css">
     <script type="module" src="js/main.js"></script>
+    <script defer src="js/nav.js"></script>
 </head>
 <body>
     <header>
         <div class="container">
             <h1>Haris Sabanovic CV</h1>
-            <button class="menu-btn">Menu</button>
+            <button class="menu-btn" id="menu-btn-open">Menu</button>
         </div>
 
-        <nav>
+        <nav id="navMenu">
 
-            <button class="menu-btn-close">Stäng</button>
+            <button class="menu-btn-close" id="menu-btn-close">Stäng</button>
 
-            <a href="#">Home</a>
-            <a href="#">Add Job</a>
+            <a href="index.html">Home</a>
+            <a href="add.html">Add Job</a>
             <a href="#">About Us</a>
         </nav>
     </header>
@@ -28,7 +29,7 @@
 
     <main>
         <section class="hero">
-            <h2>Front-end </Front-end><span class="highlight">developer</span></h2>
+            <h2>Front - end </Front-end><span class="highlight">developer</span></h2>
         </section>
         <section class="job-listings">
             <h2>Jobb</h2>
