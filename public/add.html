@@ -6,6 +6,28 @@
     <title>Lägg till Jobb</title>
 </head>
 <body>
+
+    <div class="form-container">
+        <form id="jobForm">
+            <label for="companyName">Företagets namn:</label>
+            <input type="text" id="companyName" name="companyName" required>
+
+            <label for="jobTitle">Jobbtitel</label>
+            <input type="text" id="jobTitle" name="jobTitle" required>
+
+            <label for="startDate">Startdatum</label>
+            <input type="date" id="startDate" name="startDate" required>
+
+            <label for="endDate">Slutdatum</label>
+            <input type="date" id="endDate" name="endDate" required>
+            
+            <label for="description">Beskrivning</label>
+            <textarea id="description" name="description" rows="4"></textarea>
+
+            <button type="submit">Lägg till Jobb</button>
+
+        </form>
+    </div>
     
 </body>
 </html>
