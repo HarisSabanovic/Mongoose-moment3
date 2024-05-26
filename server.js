@@ -75,6 +75,15 @@ app.post("/jobs", async(req, res) => {
     }
 })
 
+app.delete("/job/:id", async (req, res) => {
+    try{
+        const jobId = req.params.id;
+
+    } catch(error){
+        res.json(error);
+    }
+})
+
 
 app.listen(port, () => {
     console.log("server is running on port: " + port);
