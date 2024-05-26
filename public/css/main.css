@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1e21;
+    color: #e4e6eb;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #242526;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 24px;
+}
+
+.menu-btn {
+    background-color: #3a3b3c;
+    border: none;
+    color: #e4e6eb;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.menu-btn-close {
+    background-color: #1c1e21;
+    border: none;
+    width: 100px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #e4e6eb;
+    margin: 1em;
+    cursor: pointer;
+}
+
+nav{
+    top:0;
+    right: 0;
+    position: absolute;
+    background-color: #3a3b3c;
+    height: 100vh;
+    width: 250px;
+    display: none;
+}
+
+nav a {
+    text-align: center;
+    text-decoration: none;
+    color: white; padding: 10px;
+    border-bottom: 1px solid #1c1e21;
+    padding: 20px;
+    display: block;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    color: #ffffff;
+    font-size: 36px;
+    margin: 0;
+}
+
+.highlight {
+    color: #ff4500;
+    font-style: italic;
+}
+
+.job-listings {
+    background-color: #242526;
+    padding: 50px 20px;
+}
+
+.job-listings h2 {
+    color: #ffffff;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.job-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.job {
+    background-color: #3a3b3c;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.job h3 {
+    color: #ff4500;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.job p {
+    color: #e4e6eb;
+    margin: 5px 0;
+}
+
+.job p strong {
+    color: #ffffff;
+}
+
+.delete-btn {
+    background-color: #ff4500;
+    border: none;
+    color: #ffffff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/*Css för formulär*/
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-container{
+    background: #242526;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 70%;
+    margin-inline: auto;
+    color: white;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 80%;
+}
+
+#submit-btn {
+    width: 50%;
+    padding: 10px;
+    background-color: #ff4500;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
