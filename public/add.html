@@ -4,10 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lägg till Jobb</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
+    <header>
+        <div class="container">
+            <h1>Haris Sabanovic CV</h1>
+            <button class="menu-btn">Menu</button>
+        </div>
+
+        <nav>
+
+            <button class="menu-btn-close">Stäng</button>
+
+            <a href="index.html">Home</a>
+            <a href="add.html">Add Job</a>
+            <a href="#">About Us</a>
+        </nav>
+    </header>
+
+
     <div class="form-container">
+        <h1>Lägg till Jobb</h1>
         <form id="jobForm">
             <label for="companyName">Företagets namn:</label>
             <input type="text" id="companyName" name="companyName" required>
@@ -24,10 +43,12 @@
             <label for="description">Beskrivning</label>
             <textarea id="description" name="description" rows="4"></textarea>
 
-            <button type="submit">Lägg till Jobb</button>
+            <button type="submit" id="submit-btn">Lägg till Jobb</button>
 
         </form>
     </div>
+
+    <script src="js/add.js"></script>
     
 </body>
 </html>
