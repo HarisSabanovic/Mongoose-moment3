@@ -75,12 +75,13 @@ app.post("/jobs", async(req, res) => {
     }
 })
 
-app.delete("/job/:id", async (req, res) => {
+app.delete("/jobs/:id", async (req, res) => {
     try{
         const jobId = req.params.id;
-
+        await Job.findByIdAndDelete(jobId);
+        res.json({ message: "Jobbet har raderats" });
     } catch(error){
-        res.json(error);
+        res.status(500).json(error);
     }
 })
 
