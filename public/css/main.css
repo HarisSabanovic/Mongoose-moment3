@@ -12,7 +12,7 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-header .container {
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -125,7 +125,7 @@ nav a {
     color: #ffffff;
 }
 
-.delete-btn {
+#delete-btn {
     background-color: #ff4500;
     border: none;
     color: #ffffff;
@@ -177,3 +177,27 @@ input, textarea {
     font-size: 16px;
     cursor: pointer;
 }
+
+.about-container {
+    background: #242526;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 70%;
+    margin-inline: auto;
+    color: white;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+.about-container h1 {
+    text-align: center;
+}
+
+.about-container p {
+   line-height: 1.4em;
+}
+
+.about-container h3 {
+    margin-top: 50px;
+ }
