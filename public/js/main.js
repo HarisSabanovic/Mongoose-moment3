@@ -42,7 +42,6 @@ async function deleteJob(jobId) {
 
         if(response.ok) {
             console.log("Deleted succesfully");
-            fetchJobs();
         } else {
             console.error("Kan inte radera")
         }

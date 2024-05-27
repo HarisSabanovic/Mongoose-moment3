@@ -83,6 +83,16 @@ app.delete("/jobs/:id", async (req, res) => {
     } catch(error){
         res.status(500).json(error);
     }
+});
+
+app.put("/jobs/:id", async (req, res) => {
+    try {
+        const jobId = req.params.id;
+        await Job.findByIdAndUpdate(jobId);
+        res.json({ message: "Jobbet har uppdaterats"});
+    } catch(error) {
+        res.status(500).json(error);
+    }
 })
 
 
