@@ -1,5 +1,5 @@
 
-// JavaScript för att hämta data från servern och visa den på sidan
+// funktionför att hämta data från servern och visa den på sidan
 async function fetchJobs() {
     try {
         const response = await fetch('/jobs');
@@ -51,5 +51,3 @@ async function deleteJob(jobId) {
 }
 
 fetchJobs();
-
-
